@@ -1,0 +1,19 @@
+#root {
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: left !important;
+  width: 100% !important;
+  min-height: 100vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.logo {
+  height: auto !important;
+  padding: 0 !important;
+}
+
+.card {
+  padding: 0 !important;
+} 
