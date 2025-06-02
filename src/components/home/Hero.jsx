@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import backgroundVideo from '../../assets/2711306-uhd_3840_2160_24fps.mp4';
 
 const Hero = () => {
   const [loaded, setLoaded] = useState(false);
@@ -23,7 +24,7 @@ const Hero = () => {
           onCanPlay={() => setLoaded(true)}
         >
           <source 
-            src="https://assets.mixkit.co/videos/preview/mixkit-digital-animation-of-a-city-of-the-future-10451-large.mp4" 
+            src={backgroundVideo} 
             type="video/mp4" 
           />
           Your browser does not support the video tag.
@@ -74,32 +75,6 @@ const Hero = () => {
               Explore Solutions
             </Link>
           </motion.div>
-
-          {/* Floating animated dots pattern */}
-          <div className="absolute -right-40 -bottom-40 w-96 h-96 opacity-20">
-            <div className="absolute w-full h-full">
-              {[...Array(50)].map((_, i) => (
-                <motion.div
-                  key={i}
-                  className="absolute w-2 h-2 bg-primary-400 rounded-full"
-                  style={{
-                    top: `${Math.random() * 100}%`,
-                    left: `${Math.random() * 100}%`,
-                  }}
-                  animate={{
-                    y: [0, Math.random() * 10 - 5],
-                    x: [0, Math.random() * 10 - 5],
-                    scale: [1, Math.random() * 0.5 + 0.8, 1],
-                  }}
-                  transition={{
-                    duration: Math.random() * 3 + 2,
-                    repeat: Infinity,
-                    repeatType: "reverse",
-                  }}
-                />
-              ))}
-            </div>
-          </div>
         </div>
       </div>
 
