@@ -84,12 +84,6 @@ const Sitemap = () => {
               >
                 Get Directions
               </a>
-              <a 
-                href="tel:+919480603623" 
-                className="btn btn-outline"
-              >
-                Call Now
-              </a>
             </div>
           </div>
           

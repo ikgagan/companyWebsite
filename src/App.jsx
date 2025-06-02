@@ -1,5 +1,6 @@
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from './context/ThemeContext';
+import { useState, useEffect } from 'react';
 import Layout from './components/layout/Layout';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -10,11 +11,32 @@ import Careers from './pages/Careers';
 import Placeholder from './components/common/Placeholder';
 import BlogPage from './pages/BlogPage';
 import Sitemap from './pages/Sitemap';
+import TermsAndConditions from './pages/TermsAndConditions';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import ScrollToTop from './components/common/ScrollToTop';
+import LoadingScreen from './components/common/LoadingScreen';
 
 function App() {
+  // For testing purposes: Always show the loading screen
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // For testing: Keep loading screen visible
+    // Comment out the setTimeout when done testing
+    /*
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 3500);
+    
+    return () => clearTimeout(timer);
+    */
+  }, []);
+
   return (
     <ThemeProvider>
+      {isLoading && <LoadingScreen />}
       <Router>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
@@ -117,22 +139,8 @@ function App() {
             <Route path="sitemap" element={<Sitemap />} />
             <Route path="location" element={<Sitemap />} />
             <Route path="find-us" element={<Sitemap />} />
-            <Route path="terms" element={
-              <Placeholder 
-                title="Terms & Conditions" 
-                description="Our terms and conditions will be available here soon." 
-                linkText="Back to Home" 
-                linkUrl="/"
-              />
-            } />
-            <Route path="privacy" element={
-              <Placeholder 
-                title="Privacy Policy" 
-                description="Our privacy policy will be available here soon." 
-                linkText="Back to Home" 
-                linkUrl="/"
-              />
-            } />
+            <Route path="terms" element={<TermsAndConditions />} />
+            <Route path="privacy" element={<PrivacyPolicy />} />
             
             {/* Catch-all route for 404 */}
             <Route path="*" element={

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { fadeInUp, staggerContainer } from '../../utils/animations';
+import ScrollToTopLink from '../common/ScrollToTopLink';
 
 const footerLinks = [
   {
@@ -76,6 +77,19 @@ const socialLinks = [
   }
 ];
 
+const FooterLinkItem = ({ link }) => {
+  return (
+    <li>
+      <ScrollToTopLink
+        to={link.to}
+        className="text-secondary-300 hover:text-primary-400 transition-colors"
+      >
+        {link.name}
+      </ScrollToTopLink>
+    </li>
+  );
+};
+
 const Footer = () => {
   return (
     <footer className="bg-secondary-950 text-white pt-16 pb-8">
@@ -150,14 +164,7 @@ const Footer = () => {
               </h3>
               <ul className="space-y-2">
                 {column.links.map((link) => (
-                  <li key={link.name}>
-                    <Link
-                      to={link.to}
-                      className="text-secondary-300 hover:text-primary-400 transition-colors"
-                    >
-                      {link.name}
-                    </Link>
-                  </li>
+                  <FooterLinkItem key={link.name} link={link} />
                 ))}
               </ul>
             </motion.div>
@@ -172,19 +179,19 @@ const Footer = () => {
             <div className="mt-4 md:mt-0">
               <ul className="flex space-x-6 text-sm">
                 <li>
-                  <Link to="/terms" className="text-secondary-400 hover:text-white transition-colors">
+                  <ScrollToTopLink to="/terms" className="text-secondary-400 hover:text-white transition-colors">
                     Terms & Conditions
-                  </Link>
+                  </ScrollToTopLink>
                 </li>
                 <li>
-                  <Link to="/privacy" className="text-secondary-400 hover:text-white transition-colors">
+                  <ScrollToTopLink to="/privacy" className="text-secondary-400 hover:text-white transition-colors">
                     Privacy Policy
-                  </Link>
+                  </ScrollToTopLink>
                 </li>
                 <li>
-                  <Link to="/find-us" className="text-secondary-400 hover:text-white transition-colors">
+                  <ScrollToTopLink to="/find-us" className="text-secondary-400 hover:text-white transition-colors">
                     Find Us
-                  </Link>
+                  </ScrollToTopLink>
                 </li>
               </ul>
             </div>
