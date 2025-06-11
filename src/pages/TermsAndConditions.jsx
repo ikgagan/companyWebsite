@@ -83,7 +83,7 @@ const TermsAndConditions = () => {
                 If you have any questions about these Terms, please contact us:
               </p>
               <ul>
-                <li>By email: AdhipSarda@bhatiyaniai.com</li>
+                <li>By email: adhipsarda@bhatiyaniai.com</li>
                 <li>By phone: +91 9480603623</li>
                 <li>By mail: # 23, 1st Floor, 5th Cross, Ghandinagar, Bengaluru, Karnataka, India 560009</li>
               </ul>

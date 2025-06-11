@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import SectionTitle from '../common/SectionTitle';
 import { fadeInLeft, fadeInRight } from '../../utils/animations';
 import useScrollAnimation from '../../hooks/useScrollAnimation';
+import qualityImg from '../../assets/quality.jpg';
 
 const solutions = [
   {
@@ -33,7 +34,7 @@ const solutions = [
     id: 3,
     title: 'Quality Inspection & Security',
     description: 'Combining AI-driven defect detection and real-time anomaly detection for enhanced security in warehouses and factories.',
-    image: 'https://images.unsplash.com/photo-1583310929905-250e9a6ae253?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    image: qualityImg,
     link: '/solutions',
     stats: [
       { value: '95%', label: 'Detection Rate' },

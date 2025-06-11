@@ -15,6 +15,7 @@ import TermsAndConditions from './pages/TermsAndConditions';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import ScrollToTop from './components/common/ScrollToTop';
 import LoadingScreen from './components/common/LoadingScreen';
+import TeamMemberDetail from './pages/TeamMemberDetail';
 
 function App() {
   // For testing purposes: Always show the loading screen
@@ -41,6 +42,7 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
+            <Route path="about/leader/:id" element={<TeamMemberDetail />} />
             <Route path="solutions" element={<Solutions />} />
             
             {/* Contact Routes */}

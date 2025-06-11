@@ -56,8 +56,8 @@ const Sitemap = () => {
               <div>
                 <h3 className="text-lg font-semibold mb-2 text-primary-600 dark:text-primary-400">Email</h3>
                 <p className="text-secondary-700 dark:text-secondary-300">
-                  <a href="mailto:AdhipSarda@bhatiyaniai.com" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
-                    AdhipSarda@bhatiyaniai.com
+                  <a href="mailto:adhipsarda@bhatiyaniai.com" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                    adhipsarda@bhatiyaniai.com
                   </a>
                 </p>
               </div>

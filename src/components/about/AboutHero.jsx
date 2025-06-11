@@ -25,41 +25,6 @@ const AboutHero = () => {
               Our expertise lie in developing AI-powered systems that enhance operational efficiency, 
               security, and quality control across warehouses, factories, and various industries.
             </p>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-              <motion.div 
-                className="flex flex-col items-center text-center"
-                variants={fadeInUp}
-                initial="hidden"
-                animate="visible"
-                transition={{ duration: 0.6, delay: 0.1 }}
-              >
-                <span className="text-4xl font-bold text-primary-600 dark:text-primary-400 mb-2">98%</span>
-                <span className="text-secondary-600 dark:text-secondary-300">Accuracy Rate</span>
-              </motion.div>
-
-              <motion.div 
-                className="flex flex-col items-center text-center"
-                variants={fadeInUp}
-                initial="hidden"
-                animate="visible"
-                transition={{ duration: 0.6, delay: 0.2 }}
-              >
-                <span className="text-4xl font-bold text-primary-600 dark:text-primary-400 mb-2">200+</span>
-                <span className="text-secondary-600 dark:text-secondary-300">Clients Worldwide</span>
-              </motion.div>
-
-              <motion.div 
-                className="flex flex-col items-center text-center"
-                variants={fadeInUp}
-                initial="hidden"
-                animate="visible"
-                transition={{ duration: 0.6, delay: 0.3 }}
-              >
-                <span className="text-4xl font-bold text-primary-600 dark:text-primary-400 mb-2">12+</span>
-                <span className="text-secondary-600 dark:text-secondary-300">Years of Innovation</span>
-              </motion.div>
-            </div>
           </motion.div>
 
           <motion.div 
