@@ -68,7 +68,7 @@ ${formData.message}
 
       // Prepare template parameters
       const templateParams = {
-        to_email: type === 'support' ? 'support@bhatiyaniai.com' : 'adhipsarda@bhatiyaniai.com',
+        to_email: type === 'support' ? 'support@bhatiyaniai.com' : 'support@bhatiyaniai.com',
         from_name: formData.name,
         from_email: formData.email,
         phone: formData.phone || 'Not provided',

@@ -27,7 +27,7 @@ const Sitemap = () => {
               <div>
                 <h3 className="text-lg font-semibold mb-2 text-primary-600 dark:text-primary-400">Address</h3>
                 <p className="text-secondary-700 dark:text-secondary-300">
-                  # 23, 1st Floor, 5th Cross, Ghandinagar,<br />
+                  # 23, 1st Floor, 5th Cross, Gandhinagar,<br />
                   Bengaluru, Karnataka, India 560009
                 </p>
               </div>
@@ -77,7 +77,7 @@ const Sitemap = () => {
             
             <div className="mt-8 flex flex-wrap gap-4">
               <a 
-                href="https://www.google.com/maps/dir//Gandhinagar,+Bengaluru,+Karnataka+560009/@12.974243,77.5755237,17z/" 
+                href="https://www.google.com/maps?kgmid=/g/1tfdx8yl&hl=en-IN&shndl=30&shem=lcuae,npsc2&kgs=556ee26ac48ea2d0&um=1&ie=UTF-8&fb=1&gl=us&sa=X&geocode=KbsIXx0SFq47MTagOstvrj5k&daddr=24,+5th+Cross+Rd,+Gandhi+Nagar,+Bengaluru,+Karnataka+560009,+India" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="btn btn-primary"
@@ -90,10 +90,10 @@ const Sitemap = () => {
           {/* Map */}
           <div className="bg-secondary-50 dark:bg-secondary-900 p-4 rounded-lg shadow-sm">
             <div className="aspect-square h-full w-full rounded-lg overflow-hidden">
-              {/* Using Google Maps iframe */}
+              {/* Using Google Maps iframe with exact address */}
               <iframe 
                 title="Bhatiyani Astute Intelligence Office Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9942929535915!2d77.57552367404402!3d12.974242914884506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15d5a4a9decd%3A0x3baf3df491a198d3!2sGandhinagar%2C%20Bengaluru%2C%20Karnataka%20560009!5e0!3m2!1sen!2sin!4v1717424456358!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9942929535915!2d77.57552367404402!3d12.974242914884506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU4JzI3LjMiTiA3N8KwMzQnMzIuMCJF!5e0!3m2!1sen!2sin!4v1717424456358!5m2!1sen!2sin&iwloc=&q=%2323%2C%205th%20Cross%2C%20Gandhinagar%2C%20Bengaluru%2C%20Karnataka%2C%20India%20560009"
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 

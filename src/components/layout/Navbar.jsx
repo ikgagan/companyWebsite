@@ -88,7 +88,7 @@ const Navbar = () => {
           <div className="container-custom">
             <div className="relative flex h-16 items-center justify-between">
               {/* Mobile menu button on the right side */}
-              <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
+              <div className="absolute inset-y-0 right-0 flex items-center md:hidden">
                 <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-secondary-800 dark:text-secondary-200 hover:bg-secondary-100 dark:hover:bg-secondary-800 transition-colors duration-300">
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>
@@ -116,7 +116,7 @@ const Navbar = () => {
               </div>
               
               {/* Navigation and dark mode toggle on the right */}
-              <div className="hidden sm:flex items-center space-x-4">
+              <div className="hidden md:flex items-center space-x-4">
                 <div className="flex space-x-4 items-center h-full">
                   {navigation.map((item) => {
                     const isActive = item.to !== '#' && (location.pathname === item.to || (item.to !== '/' && location.pathname.startsWith(item.to)));
@@ -198,7 +198,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden">
+          <Disclosure.Panel className="md:hidden">
             <div className="space-y-1 px-2 pb-3 pt-2">
               {navigation.map((item) => (
                 <div key={item.name}>

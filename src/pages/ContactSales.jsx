@@ -93,8 +93,8 @@ const ContactSales = () => {
                 </p>
                 <p className="text-secondary-700 dark:text-secondary-300 flex items-center">
                   <span className="mr-2">📧</span>
-                  <a href="mailto:innovation@bhatiyani.com" className="font-medium hover:underline">
-                    innovation@bhatiyani.com
+                  <a href="mailto:support@bhatiyaniai.com" className="font-medium hover:underline">
+                    support@bhatiyaniai.com
                   </a>
                 </p>
               </div>
@@ -107,7 +107,7 @@ const ContactSales = () => {
               title="Talk to Sales"
               subtitle="Get in Touch"
               description="Interested in learning how our AI solutions can transform your business? Fill out the form below and our sales team will contact you shortly."
-              email="innovation@bhatiyani.com"
+              email="support@bhatiyaniai.com"
             />
           </div>
         </div>

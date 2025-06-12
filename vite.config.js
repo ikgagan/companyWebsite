@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/companyWebsite/', // The name of your GitHub repository
+  base: '/', // Updated for custom domain
 })
